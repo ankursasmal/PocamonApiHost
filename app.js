@@ -1,7 +1,6 @@
- require('dotenv').config();
- let express=require('express');
+  let express=require('express');
 let app=express();
-let PORT=process.env.PORT || 3000;
+let PORT= 3000;
 let router=require('./route/route');
 require('./db/cnnection');
 
