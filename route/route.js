@@ -44,21 +44,20 @@ router.get('/', async (req, res) => {
     }
 });
 
-router.get('/testing', async (req, res) => {
-    try{
-        let data=await pocamon.find(req.query).sort('name');
-console.log(req.query)
+// router.get('/testing', async (req, res) => {
+//     try{
+//         let data=await pocamon.find(req.query).sort('name');
+// console.log(req.query)
 
-            res.status(200).json({ mes: 'get all',data:data });
-    }
-    catch(e){
-        res.status(404).json({ mes: ' not get all', });
+//             res.status(200).json({ mes: 'get all',data:data });
+//     }
+//     catch(e){
+//         res.status(404).json({ mes: ' not get all', });
 
-    }
-});
+//     }
+// });
 
-module.exports = router;
-
+ 
 
 //  **********normal query ***********
 // router.get('/testing', async (req, res) => {
@@ -73,3 +72,7 @@ module.exports = router;
 
 //     }
 // });
+
+
+
+module.exports = router;
