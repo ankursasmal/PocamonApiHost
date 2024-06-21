@@ -12,6 +12,6 @@ app.get('/',(req,res)=>{
 // for api route in next by default
  app.use("/api/products",router);
 
-app.listen(PORT,()=>{
+app.listen(PORT, "0.0.0.0",()=>{
     console.log('server run ',PORT)
 })
